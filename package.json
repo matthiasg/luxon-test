@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ICU_DATA=node_modules/full-icu node index.js"
+    "start": "cross-env-shell NODE_ICU_DATA=node_modules/full-icu node index.js",
+    "alternate": "node --icu-data-dir node_modules/full-icu index.js"
   },
   "repository": {
     "type": "git",
